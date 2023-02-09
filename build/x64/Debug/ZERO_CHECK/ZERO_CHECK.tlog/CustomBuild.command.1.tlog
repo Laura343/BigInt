@@ -1,0 +1,10 @@
+^C:\USERS\USER\ACA\ACA_BIGINT\BUILD\CMAKEFILES\8E7B0314236084F8D70E4A514D223A30\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/ACA/ACA_BigInt -BC:/Users/User/ACA/ACA_BigInt/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/User/ACA/ACA_BigInt/build/BigInt.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,4 @@
+C:/Users/User/ACA/ACA_BigInt/src/build/CMakeFiles/main.dir
+C:/Users/User/ACA/ACA_BigInt/src/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/User/ACA/ACA_BigInt/src/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/User/ACA/ACA_BigInt/src/build/BigInt/CMakeFiles/BigInt.dir
