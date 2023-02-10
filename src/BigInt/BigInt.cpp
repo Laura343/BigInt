@@ -1,8 +1,9 @@
 #include <BigInt/BigInt.h>
 
+#include <algorithm>
+#include <exception>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -318,7 +319,7 @@ BigInt& BigInt::operator/=(const BigInt& rhs)
 	}
 	if(rhs.digits=="0")
 	{
-		throw ("Divide by Zero");
+		throw std::logic_error("Divide by Zero");
 	}
 	BigInt tmp;
 	std::string result;
