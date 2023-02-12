@@ -1,0 +1,9 @@
+C:/Users/User/ACA/Project2/build/CMakeFiles/RUN_TESTS.dir
+C:/Users/User/ACA/Project2/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/User/ACA/Project2/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/User/ACA/Project2/build/src/CMakeFiles/main.dir
+C:/Users/User/ACA/Project2/build/src/CMakeFiles/RUN_TESTS.dir
+C:/Users/User/ACA/Project2/build/src/BigInt/CMakeFiles/BigInt.dir
+C:/Users/User/ACA/Project2/build/src/BigInt/CMakeFiles/RUN_TESTS.dir
+C:/Users/User/ACA/Project2/build/tests/CMakeFiles/BigIntTest.dir
+C:/Users/User/ACA/Project2/build/tests/CMakeFiles/RUN_TESTS.dir

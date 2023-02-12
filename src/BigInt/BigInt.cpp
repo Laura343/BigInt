@@ -152,10 +152,11 @@ BigInt& BigInt::operator--()
 		digits[i]='9';
 		i++;
 	}
-	if(i==digits.length()-1 && digits[i]=='1')
+	digits[i]--;
+	if(digits[digits.length()-1]=='0' && digits.length()>1)
+	{
 		digits.pop_back();
-	else
-		digits[i]--;
+	}
 	std::reverse(digits.begin(),digits.end());
 
     return *this;
@@ -255,10 +256,12 @@ BigInt& BigInt::operator-=(const BigInt& rhs)
 		}
 		tmp=isPos?0:1;
 	}
-
-	if(digits[digits.length()-1]=='0')
+	j=digits.length()-1;
+	while(digits[j]=='0')
+	{
 		digits.pop_back();
-
+		j--;
+	}
 	std::reverse(digits.begin(),digits.end());
 	}
 	
@@ -407,6 +410,7 @@ BigInt& BigInt::operator^=(const BigInt& rhs)
 	BigInt b=rhs;
 	BigInt a=*this;
 	digits="1";
+	BigInt two="2";
 	while(b.digits!="0")
 	{
 		if((b.digits[b.digits.length()-1]-'0')&1==1)
@@ -414,7 +418,7 @@ BigInt& BigInt::operator^=(const BigInt& rhs)
 			(*this)*=a;
 		}
 		a*=a;
-		b/=2;
+		b/=two;
 	}
     return *this;
 }
