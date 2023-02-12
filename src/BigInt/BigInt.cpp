@@ -276,7 +276,7 @@ BigInt operator-(BigInt lhs, const BigInt& rhs)
 
 BigInt& BigInt::operator*=(const BigInt& rhs)
 {
-	BigInt num="0";
+	BigInt num("0");
 	for(int i=0;i<rhs.digits.length();++i)
 	{
 		num+=mul(rhs.digits[i]);
@@ -410,7 +410,7 @@ BigInt& BigInt::operator^=(const BigInt& rhs)
 	BigInt b=rhs;
 	BigInt a=*this;
 	digits="1";
-	BigInt two="2";
+	BigInt two("2");
 	while(b.digits!="0")
 	{
 		if((b.digits[b.digits.length()-1]-'0')&1==1)
