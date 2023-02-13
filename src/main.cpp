@@ -6,9 +6,9 @@ using namespace ACA;
 
 int main()
 {
-	BigInt num1("22507");
-    BigInt num2("234512003");
-    BigInt num3=("0");
+	BigInt num1(std::string("22507"));
+    BigInt num2(std::string("234512003"));
+    BigInt num3 = std::string("0");
     BigInt num4 = std::string("1") + num3;
 
     std::cout<<(num1>num2)<<std::endl;
